@@ -119,6 +119,7 @@ ol {
     clip-path: circle(100% at center);
   }
 }
+
 /*----------------------------------------*/
 /*----------------------------------------*/
 
@@ -126,8 +127,8 @@ ol {
 /*------ESTILIZACION TITULOS PAG. INICIO------*/
 /*--------------------------------------------*/
 
-.caja1{
-  padding-bottom:0.5rem;
+.caja1 {
+  padding-bottom: 0.5rem;
 }
 
 .h1 {
@@ -187,13 +188,18 @@ article {
 
 
 /*---------ESTILIZACION GENERAL PÁGINAS---------*/
-.main, .main2, .main3, .main4, .main5 {
+.main,
+.main2,
+.main3,
+.main4,
+.main5 {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
 }
+
 .main {
   background-image: url("../img/gym1.JPG");
   height: 90vh;
@@ -214,28 +220,23 @@ article {
 
 /*-------Estilo página DISCIPLINAS---------*/
 .main3 {
-  /*height: 80vh;*/
-  flex-direction: row;
-  padding: 40px 0px 45px 0px;
-  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 15px 0px 0px 0px;
+  /*justify-content: space-evenly;*/
+  background-color: rgb(61, 58, 55);
 }
-
-
 
 /*-------Estilo página DOJOS--------------*/
 .main4 {
-  
   background-image: url("../img/gym3.jpg");
   /*height: 65vh;*/
   flex-direction: row;
   padding: 2rem;
-  /*16px*/
   justify-content: space-between;
 }
 
 /*-------Estilo página CONTACTO--------------*/
 .main5 {
-  
   background-image: url("../img/gym10.JPG");
   /*height: 100vh;*/
   flex-direction: column;
@@ -243,163 +244,101 @@ article {
   padding-bottom: 3rem;
 }
 
-
 .nombres {
   color: rgb(238, 249, 24);
+  text-shadow: 1.5px 1.5px 1.5px rgb(116, 114, 114);
+  font-family: "Zen Dots", serif;
+  font-weight: 400;
+  font-size: 40px;
 }
-
 
 /*----Estilo imágenes DISCIPLINAS-----*/
 .mma {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/mma.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: auto;
-  background-position: 60%;
-  height: 100%;
-  width: 10 vh;
   display: flex;
-  padding: 4rem;
-  /*16px*/
+  margin-top: 15px;
+  background-size: 110%;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 100vw;
+  padding: 5rem;
 }
 
 .bjj {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/bjj.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: auto;
-  background-position: 45%;
-  height: 100%;
-  width: 14%;
   display: flex;
-  padding: 1rem;
-  /*16px*/
+  margin-top: 15px;
+  background-size: 120%;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 100vw;
+  padding-top: 5rem;
+  padding-left: 3.5rem;
 }
 
 .box {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/boxeo.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 85%;
-  height: 100%;
-  width: 10 vh;
   display: flex;
-  padding: 3rem;
-  /*16px*/
+  margin-top: 15px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 65%;
+  height: 35vh;
+  width: 100vw;
+  padding: 5rem;
 }
 
 .kick {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/kick.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 57%;
-  height: 100%;
-  width: 14%;
   display: flex;
-  padding: 1rem;
-  /*16px*/
+  margin-top: 15px;
+  background-size: 100%;
+  background-position: 65%;
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 100vw;
+  padding-top: 5rem;
+  padding-left: 1rem;
 }
 
 .thai {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/thai.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 53%;
-  height: 100%;
-  width: 14%;
   display: flex;
-  padding: 1rem;
-  /*16px*/
+  margin-top: 15px;
+  background-size: 150%;
+  background-position: 55%;
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 100vw;
+  padding-top: 5rem;
+  padding-left: 2rem;
 }
 
 .judo {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/judo.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 57%;
-  height: 100%;
-  width: 14%;
   display: flex;
-  padding: 1rem;
-  /*16px*/
+  margin-top: 15px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 65%;
+  height: 35vh;
+  width: 100vw;
+  padding: 5rem;
 }
 
 .wrestling {
-  color: #fffffff7;
-  background-color: black;
   background-image: url(../img/wrestling.jpg);
-  font-weight: 400;
-  text-align: justify;
-  font-size: 40px;
-  font-family: "Zen Dots", serif;
-  align-content: flex-end;
-  padding-top: 1rem;
-  margin-top: 45px;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 58%;
-  height: 100%;
-  width: 10 vh;
   display: flex;
-  padding: 1rem;
+  margin-top: 15px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 100vw;
+  padding: 3rem;
 }
+
 /*------------------------------------*/
 /*------------------------------------*/
 
@@ -409,7 +348,7 @@ a {
 }
 
 footer {
-  
+
   border-top: 2px solid black;
   background: rgb(240, 240, 231);
   height: 12rem;
@@ -417,7 +356,7 @@ footer {
   text-align: center;
 }
 
-.textofooter { 
+.textofooter {
   font-size: 14px;
   color: #464646;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -426,24 +365,24 @@ footer {
 
 .duda {
   margin-top: 1.5rem;
-  font-size:21px;
+  font-size: 21px;
   font-weight: bold;
   color: #5b4e4e;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .copyright {
-  background-color:antiquewhite;
+  background-color: antiquewhite;
   font-size: 11.5px;
   margin-top: 2rem;
   padding-top: 1.5px;
   padding-bottom: 1.5px;
-  text-align:left;
+  text-align: left;
   border-top: 1px solid black 50%;
 }
 
 .a {
-  color:#464646;
+  color: #464646;
 }
 
 
@@ -462,6 +401,7 @@ footer {
   padding-left: 1rem;
   text-shadow: 3px 3px 2px rgb(94, 92, 92);
 }
+
 p {
   color: rgb(238, 249, 24);
   text-align: left;
@@ -472,15 +412,15 @@ p {
   padding-left: 1rem;
   border-bottom: 1px solid white;
 }
- 
+
 .direccion {
   background-color: rgba(0, 0, 0, 0.254);
   padding-bottom: 0.5rem;
   padding-inline: 0.5rem;
 }
 
-.mapa iframe{
-  position:relative;
+.mapa iframe {
+  position: relative;
   overflow: hidden;
   box-sizing: inherit;
   display: block;
@@ -525,10 +465,106 @@ textarea {
   display: flex;
   align-content: flex-start;
 }
+
 /*----------------------------------------*/
 /*----------------------------------------*/
 
+/*-----------MEDIA QUERY 480 PX-----------*/
 
+@media (min-width:480px) {
+
+  /*----Estilo imágenes DISCIPLINAS-----*/
+  .mma {
+    padding-top: 8rem;
+    padding-left: 11rem;
+  }
+
+  .bjj {
+    padding-top: 8rem;
+    padding-left: 8rem;
+  }
+
+  .box {
+    padding-top: 8rem;
+    padding-left: 10rem;
+  }
+
+  .kick {
+    padding-top: 8rem;
+    padding-left: 6rem;
+  }
+
+  .thai {
+    padding-top: 8rem;
+    padding-left: 7rem;
+  }
+
+  .judo {
+    padding-top: 10rem;
+    padding-left: 11rem;
+  }
+
+  .wrestling {
+    padding-top: 5rem;
+    padding-left: 8rem;
+  }
+  footer {
+    height: 11rem;
+  }
+
+  /*------------------------------------*/
+  /*------------------------------------*/
+
+}
+
+/*-----------MEDIA QUERY 600 PX-----------*/
+
+@media (min-width:600px) {
+
+  /*----Estilo imágenes DISCIPLINAS-----*/
+  .mma {
+    padding-top: 8rem;
+    padding-left: 15rem;
+  }
+
+  .bjj {
+    padding-top: 8rem;
+    padding-left: 12rem;
+  }
+
+  .box {
+    padding-top: 8rem;
+    padding-left: 13rem;
+  }
+
+  .kick {
+    padding-top: 8rem;
+    padding-left: 9rem;
+  }
+
+  .thai {
+    padding-top: 8rem;
+    padding-left: 11rem;
+  }
+
+  .judo {
+    padding-top: 10rem;
+    padding-left: 15rem;
+  }
+
+  .wrestling {
+    padding-top: 7rem;
+    padding-left: 12rem;
+  }
+  
+  footer {
+    height: 10rem;
+  }
+
+  /*------------------------------------*/
+  /*------------------------------------*/
+
+}
 
 /*-----------MEDIA QUERY 768 PX-----------*/
 @media (min-width: 768px) {
@@ -536,6 +572,7 @@ textarea {
     width: 85px;
     height: 85px;
   }
+
   .nav {
     background: linear-gradient(135deg, white 0% 50%, rgb(251, 251, 196));
     height: 90px;
@@ -543,6 +580,7 @@ textarea {
     border-bottom: solid 5px #fff200;
     position: fixed;
   }
+
   .nav_item {
     color: black;
     font-weight: 400;
@@ -554,8 +592,9 @@ textarea {
     margin-left: 30px;
     margin-right: 20px;
     width: 60%;
-    --clippy: polygon(0 0, 0 0, 0% 100%, 0 100%); 
-  } 
+    --clippy: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  }
+
   .h1 {
     color: #fcfcf1c6;
     font-weight: 500;
@@ -566,6 +605,7 @@ textarea {
     padding-top: 6rem;
     text-shadow: 3px 3px 2px rgb(94, 92, 92);
   }
+
   .h2 {
     color: #fff200;
     font-weight: 400;
@@ -575,6 +615,7 @@ textarea {
     align-content: space-between;
     text-shadow: 3px 3px 2px rgb(57, 57, 57);
   }
+
   article {
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgba(238, 249, 24, 0.402);
@@ -583,6 +624,7 @@ textarea {
     margin: 30px 160px 20px 40px;
     font-family: "Sintony", sans-serif;
   }
+
   .quienes-somos {
     color: #fcfcf1c6;
     font-weight: 400;
@@ -594,24 +636,35 @@ textarea {
     text-shadow: 3px 3px 2px rgb(94, 92, 92);
   }
   footer {
-    font-size: 18px;
-    color: rgb(45, 43, 41);
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(90deg, rgb(184, 182, 39)0% 80%, rgb(93, 84, 84))
+    height: 8rem;
   }
+  .textofooter {
+    font-size: 16px;
+  }
+  
+  .duda {
+    font-size: 26px;
+  }
+  
+  .copyright {
+    font-size: 14px;
+  }
+
   a {
     text-decoration: none;
     color: rgb(45, 43, 41);
   }
+
   .titulos {
     font-size: 40px;
     padding-top: 4rem;
     padding-left: 2rem;
   }
-  p{
-  font-size: 20px;
+
+  p {
+    font-size: 20px;
   }
+
   input {
     color: rgb(78, 75, 75);
     text-align: justify;
@@ -621,6 +674,7 @@ textarea {
     font-family: "Sintony", sans-serif;
     background-color: transparent;
   }
+
   textarea {
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -632,6 +686,7 @@ textarea {
     background-color: transparent;
     resize: none;
   }
+
   .msj {
     color: #fffffff7;
     font-weight: 400;
@@ -643,10 +698,145 @@ textarea {
     display: flex;
     align-content: flex-end;
   }
+
+/*----Estilo imágenes DISCIPLINAS-----*/
+  .mma {
+    padding-top: 8rem;
+    padding-left: 20rem;
+  }
+
+  .bjj {
+    padding-top: 8rem;
+    padding-left: 16rem;
+  }
+
+  .box {
+    padding-top: 8rem;
+    padding-left: 18rem;
+  }
+
+  .kick {
+    padding-top: 10rem;
+    padding-left: 14rem;
+  }
+
+  .thai {
+    padding-top: 8rem;
+    padding-left: 15rem;
+  }
+
+  .judo {
+    padding-top: 10rem;
+    padding-left: 20rem;
+  }
+
+  .wrestling {
+    padding-top: 8rem;
+    padding-left: 17rem;
+  }
 }
 /*----------------------------------------*/
 /*----------------------------------------*/
 
+
+/*-----------MEDIA QUERY 1024 PX-----------*/
+@media (min-width:1024px) {
+
+  .main,
+  .main2,
+  .main3,
+  .main5 {
+    height: 100vh;
+  }
+  
+  .main3 {
+    flex-direction: row;
+    padding: 40px 0px 45px 0px;
+    /*justify-content: space-evenly;*/
+  }
+  /*----Estilo imágenes DISCIPLINAS-----*/
+  .mma {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: auto;
+    background-position: 60%;
+    height: 100%;
+    width: 15vw;
+    padding: 5rem;
+  }
+
+  .bjj {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: auto;
+    background-position: 45%;
+    height: 100%;
+    width: 14vw;
+    padding: 1rem;
+  }
+
+  .box {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 85%;
+    height: 100%;
+    width: 14vw;
+    padding: 3rem;
+  }
+
+  .kick {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 57%;
+    height: 100%;
+    width: 14vw;
+    padding: 1rem;
+  }
+
+  .thai {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 53%;
+    height: 100%;
+    width: 14vw;
+    padding: 1rem;
+  }
+
+  .judo {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 57%;
+    height: 100%;
+    width: 14vw;
+    padding: 1rem;
+  }
+
+  .wrestling {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 58%;
+    height: 100%;
+    width: 14vw;
+    padding: 1rem;
+  }
+
+  footer {
+    height: 10rem;
+  }
+  /*------------------------------------*/
+  /*------------------------------------*/
+
+}
 
 
 /*-----------MEDIA QUERY 1200 PX-----------*/
@@ -655,6 +845,7 @@ textarea {
     width: 100px;
     height: 89px;
   }
+
   .nav {
     background: linear-gradient(135deg, white 0% 50%, rgb(251, 251, 196));
     height: 90px;
@@ -662,6 +853,7 @@ textarea {
     border-bottom: solid 5px #fff200;
     position: fixed;
   }
+
   .nav_item {
     color: black;
     font-weight: 400;
@@ -674,6 +866,7 @@ textarea {
     width: 80%;
     --clippy: polygon(0 0, 0 0, 0% 100%, 0 100%);
   }
+
   .h1 {
     color: #fcfcf1c6;
     font-weight: 400;
@@ -684,6 +877,7 @@ textarea {
     padding-top: 6rem;
     text-shadow: 3px 3px 2px rgb(94, 92, 92);
   }
+
   .h2 {
     color: #fff200;
     font-weight: 400;
@@ -694,10 +888,98 @@ textarea {
     text-shadow: 3px 3px 2px rgb(57, 57, 57);
   }
 
-  .main, .main2, .main3, .main5 {
+  .main,
+  .main2,
+  .main3,
+  .main5 {
     height: 100vh;
-  } 
+  }
+
+  .main3 {
+    flex-direction: row;
+    padding: 40px 0px 45px 0px;
+    justify-content: space-evenly;
+  }
+  .mma {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: auto;
+    background-position: 60%;
+    height: 100%;
+    width: 10vw;
+    padding: 4rem;
+  }
+
+  .bjj {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: auto;
+    background-position: 45%;
+    height: 100%;
+    width: 14%;
+    padding: 1rem;
+  }
+
+  .box {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 85%;
+    height: 100%;
+    width: 10vw;
+    padding: 3rem;
+  }
+
+  .kick {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 57%;
+    height: 100%;
+    width: 14%;
+    padding: 1rem;
+  }
+
+  .thai {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 53%;
+    height: 100%;
+    width: 14%;
+    padding: 1rem;
+  }
+
+  .judo {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 57%;
+    height: 100%;
+    width: 14%;
+    padding: 1rem;
+  }
+
+  .wrestling {
+    padding-top: 1rem;
+    margin-top: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 58%;
+    height: 100%;
+    width: 10vw;
+    padding: 1rem;
+  }
+
+  footer {
+    height: 10rem;
+  }
 }
+
 /*----------------------------------------*/
 /*----------------------------------------*/
 
@@ -712,6 +994,7 @@ textarea {
     margin: 30px 400px 20px 40px;
     font-family: "Sintony", sans-serif;
   }
+
   .quienes-somos {
     color: #fcfcf1c6;
     font-weight: 400;
@@ -722,6 +1005,7 @@ textarea {
     padding-top: 6rem;
     text-shadow: 3px 3px 2px rgb(94, 92, 92);
   }
+
   input {
     color: rgb(78, 75, 75);
     text-align: justify;
@@ -731,6 +1015,7 @@ textarea {
     font-family: "Sintony", sans-serif;
     background-color: transparent;
   }
+
   textarea {
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -742,6 +1027,7 @@ textarea {
     background-color: transparent;
     resize: none;
   }
+
   .msj {
     color: #fffffff7;
     font-weight: 400;
@@ -755,5 +1041,6 @@ textarea {
     align-content: flex-end;
   }
 }
+
 /*----------------------------------------*/
 /*----------------------------------------*/
