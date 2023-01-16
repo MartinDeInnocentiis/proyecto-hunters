@@ -212,7 +212,6 @@ article {
 /*---------Estilo página QUIENES SOMOS------*/
 .main2 {
   background-image: url("../img/gym2.jpg");
-
   /*height: 80vh;*/
   flex-direction: column;
   justify-content: center;
@@ -229,7 +228,6 @@ article {
 /*-------Estilo página DOJOS--------------*/
 .main4 {
   background-image: url("../img/gym3.jpg");
-  /*height: 65vh;*/
   flex-direction: row;
   padding: 2rem;
   justify-content: space-between;
@@ -657,9 +655,10 @@ textarea {
 
   .titulos {
     font-size: 40px;
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-left: 2rem;
   }
+  
 
   p {
     font-size: 20px;
@@ -697,6 +696,10 @@ textarea {
     text-shadow: 2px 2px 2px rgb(238, 234, 122);
     display: flex;
     align-content: flex-end;
+    padding-top: 6.5rem;
+  }
+  .main4 {
+   padding-top: 7rem;
   }
 
 /*----Estilo imágenes DISCIPLINAS-----*/
@@ -1040,6 +1043,7 @@ textarea {
     display: flex;
     align-content: flex-end;
   }
+
 }
 
 /*----------------------------------------*/
