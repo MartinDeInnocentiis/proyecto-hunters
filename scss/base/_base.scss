@@ -18,27 +18,6 @@ ol {
   list-style: none;
 }
 
-.h1 {
-    color: #fcfcf1c6;
-    font-weight: 500;
-    text-align: left;
-    font-size: 30px;
-    font-family: "Zen Dots", serif;
-    align-content: space-between;
-    padding-top: 6rem;
-    text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  }
-  
-.h2 {
-    color: #fff200;
-    font-weight: 400;
-    text-align: left;
-    font-size: 40px;
-    font-family: "Rubik Distressed", sans-serif;
-    align-content: space-between;
-    text-shadow: 3px 3px 2px rgb(57, 57, 57);
-}
-
 @media (min-width: 768px) {
     .logo {
       width: 85px;
@@ -58,26 +37,5 @@ ol {
     .logo {
         width: 100px;
         height: 90px;
-      }
-
-    .h1 {
-        color: #fcfcf1c6;
-        font-weight: 400;
-        text-align: left;
-        font-size: 60px;
-        font-family: "Zen Dots", serif;
-        align-content: flex-end;
-        padding-top: 6rem;
-        text-shadow: 3px 3px 2px rgb(94, 92, 92);
-      }
-    
-      .h2 {
-        color: #fff200;
-        font-weight: 400;
-        text-align: left;
-        font-size: 80px;
-        font-family: "Rubik Distressed", sans-serif;
-        align-content: flex-end;
-        text-shadow: 3px 3px 2px rgb(57, 57, 57);
       }
 }

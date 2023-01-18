@@ -19,27 +19,6 @@ ol {
   list-style: none;
 }
 
-.h1 {
-  color: rgba(252, 252, 241, 0.7764705882);
-  font-weight: 500;
-  text-align: left;
-  font-size: 30px;
-  font-family: "Zen Dots", serif;
-  align-content: space-between;
-  padding-top: 6rem;
-  text-shadow: 3px 3px 2px rgb(94, 92, 92);
-}
-
-.h2 {
-  color: #fff200;
-  font-weight: 400;
-  text-align: left;
-  font-size: 40px;
-  font-family: "Rubik Distressed", sans-serif;
-  align-content: space-between;
-  text-shadow: 3px 3px 2px rgb(57, 57, 57);
-}
-
 @media (min-width: 768px) {
   .logo {
     width: 85px;
@@ -57,25 +36,6 @@ ol {
   .logo {
     width: 100px;
     height: 90px;
-  }
-  .h1 {
-    color: rgba(252, 252, 241, 0.7764705882);
-    font-weight: 400;
-    text-align: left;
-    font-size: 60px;
-    font-family: "Zen Dots", serif;
-    align-content: flex-end;
-    padding-top: 6rem;
-    text-shadow: 3px 3px 2px rgb(94, 92, 92);
-  }
-  .h2 {
-    color: #fff200;
-    font-weight: 400;
-    text-align: left;
-    font-size: 80px;
-    font-family: "Rubik Distressed", sans-serif;
-    align-content: flex-end;
-    text-shadow: 3px 3px 2px rgb(57, 57, 57);
   }
 }
 .nav_item {
@@ -230,7 +190,6 @@ ol {
 .main {
   background-image: url("../img/gym1.JPG");
   height: 90vh;
-  padding-left: 0.5rem;
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 5rem;
@@ -239,9 +198,8 @@ ol {
 /*---------Estilo página QUIENES SOMOS------*/
 .main2 {
   background-image: url("../img/gym2.jpg");
-  /*height: 80vh;*/
+  height: 100vh;
   flex-direction: column;
-  justify-content: center;
 }
 
 /*-------Estilo página DISCIPLINAS---------*/
@@ -267,92 +225,117 @@ ol {
   padding-bottom: 3rem;
 }
 
+.h1 {
+  color: rgba(255, 255, 255, 0.968627451);
+  font-weight: 500;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Zen Dots", serif;
+  align-content: space-between;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  text-shadow: 3px 3px 2px rgb(94, 92, 92);
+}
+
+.h2 {
+  color: rgb(238, 249, 24);
+  font-weight: 400;
+  text-align: left;
+  font-size: 40px;
+  font-family: "Rubik Distressed", sans-serif;
+  align-content: space-between;
+  text-shadow: 3px 3px 2px rgb(57, 57, 57);
+  padding-left: 1rem;
+}
+
+h3 {
+  background-color: rgba(39, 39, 39, 0.51);
+  color: rgba(255, 255, 255, 0.968627451);
+  font-family: "Roboot Slab", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  height: 5rem;
+  margin-top: 3px;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.slider-frame {
+  width: 100vw;
+  height: 20vh;
+  margin: 2px auto 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgb(142, 142, 142) 0% 70%, rgba(47, 47, 44, 0.874));
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+}
+/*----ESTILIZACION TEXTO QUIENES SOMOS----*/
+/*----------------------------------------*/
+.quienes-somos {
+  color: rgb(238, 249, 24);
+  height: 10vh;
+  font-weight: 400;
+  font-size: 28px;
+  font-family: "Zen Dots", serif;
+  text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.431);
+  margin-left: 20px;
+  padding-top: 1.5rem;
+}
+
+article {
+  color: rgba(255, 255, 255, 0.968627451);
+  font-family: "Roboot Slab", sans-serif;
+  font-weight: 100;
+  text-align: justify;
+  font-size: 16px;
+  margin: 20px 20px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.171);
+  padding-inline: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 /*----Estilo imágenes DISCIPLINAS-----*/
-/*.mma {
-    background-image: url(../img/mma.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 110%;
-    background-position: 60%;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 100vw;
-    padding: 5rem;
-}
-
-.bjj {
-    background-image: url(../img/bjj.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 120%;
-    background-position: 60%;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 100vw;
-    padding-top: 5rem;
-    padding-left: 3.5rem;
-}
-
-.box {
-    background-image: url(../img/boxeo.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 65%;
-    height: 35vh;
-    width: 100vw;
-    padding: 5rem;
-}
-
-.kick {
-    background-image: url(../img/kick.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 100%;
-    background-position: 65%;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 100vw;
-    padding-top: 5rem;
-    padding-left: 1rem;
-}
-
-.thai {
-    background-image: url(../img/thai.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 150%;
-    background-position: 55%;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 100vw;
-    padding-top: 5rem;
-    padding-left: 2rem;
-}
-
-.judo {
-    background-image: url(../img/judo.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 65%;
-    height: 35vh;
-    width: 100vw;
-    padding: 5rem;
-}
-
-.wrestling {
-    background-image: url(../img/wrestling.jpg);
-    display: flex;
-    margin-top: 15px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 100vw;
-    padding: 3rem;
-}*/
 /*------------------------------------*/
 .contenedor {
   display: grid;
@@ -556,6 +539,15 @@ textarea {
 
 /*-----------MEDIA QUERY 480 PX-----------*/
 @media (min-width: 480px) {
+  .h1 {
+    font-size: 35px;
+  }
+  .h2 {
+    font-size: 55px;
+  }
+  .slider-frame {
+    height: 30vh;
+  }
   /*----Estilo imágenes DISCIPLINAS-----*/
   /*------------------------------------*/
   .contenedor {
@@ -619,11 +611,43 @@ textarea {
   footer {
     height: 11rem;
   }
+  .textofooter {
+    font-size: 17px;
+  }
+  .duda {
+    font-size: 24px;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+  .quienes-somos {
+    font-size: 36px;
+    margin-top: 2rem;
+  }
+  article {
+    height: 62vh;
+    font-size: 18px;
+    padding-top: 1rem;
+  }
   /*------------------------------------*/
   /*------------------------------------*/
 }
 /*-----------MEDIA QUERY 600 PX-----------*/
 @media (min-width: 600px) {
+  .h1 {
+    font-size: 40px;
+  }
+  .h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 24px;
+    height: 6.5rem;
+    padding-top: 2.5rem;
+  }
+  .slider-frame {
+    height: 37vh;
+  }
   /*----Estilo imágenes DISCIPLINAS-----*/
   .contenedor {
     display: grid;
@@ -680,33 +704,50 @@ textarea {
     padding-left: 1rem;
   }
   footer {
-    height: 10rem;
+    height: 12rem;
   }
   /*------------------------------------*/
   /*------------------------------------*/
+  .quienes-somos {
+    font-size: 44px;
+    margin-top: 3rem;
+  }
+  article {
+    height: 64vh;
+    font-size: 21px;
+    margin-top: 2rem;
+  }
 }
 /*-----------MEDIA QUERY 768 PX-----------*/
 @media (min-width: 768px) {
+  .h1 {
+    font-size: 45px;
+  }
+  .h2 {
+    font-size: 65px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  .slider-frame {
+    height: 45vh;
+  }
+  .slider-frame img {
+    width: 90%;
+    margin: 0px 35px 0px 38px;
+  }
   article {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 2px rgba(238, 249, 24, 0.402);
-    text-align: justify;
-    font-size: 24px;
-    margin: 30px 160px 20px 40px;
-    font-family: "Sintony", sans-serif;
+    margin: 40px 70px 20px 40px;
+    height: 52vh;
+    font-size: 22;
   }
   .quienes-somos {
-    color: rgba(252, 252, 241, 0.7764705882);
-    font-weight: 400;
-    text-align: justify;
-    font-size: 45px;
-    font-family: "Zen Dots", serif;
-    align-content: flex-end;
-    padding-top: 6.5rem;
-    text-shadow: 3px 3px 2px rgb(94, 92, 92);
+    font-size: 46px;
+    margin-top: 9rem;
+    margin-left: 40px;
   }
   footer {
-    height: 8rem;
+    height: 14rem;
   }
   .textofooter {
     font-size: 16px;
@@ -794,6 +835,15 @@ textarea {
   .wrestling {
     background-size: 300px 300px;
   }
+  .textofooter {
+    font-size: 22px;
+  }
+  .duda {
+    font-size: 32px;
+  }
+  .copyright {
+    font-size: 20px;
+  }
 }
 /*-----------MEDIA QUERY 1024 PX-----------*/
 @media (min-width: 1024px) {
@@ -806,7 +856,25 @@ textarea {
     height: 140vh;
     flex-direction: row;
     padding: 40px 0px 45px 0px;
-    /*justify-content: space-evenly;*/
+  }
+  .h1 {
+    font-size: 50px;
+  }
+  .h2 {
+    font-size: 70px;
+  }
+  .slider-frame {
+    height: 60vh;
+  }
+  .slider-frame img {
+    width: 80%;
+    margin: 0px 35px 0px 100px;
+  }
+  article {
+    height: 40vh;
+  }
+  .quienes-somos {
+    font-size: 52px;
   }
   /*----Estilo imágenes DISCIPLINAS-----*/
   .contenedor {
@@ -871,6 +939,26 @@ textarea {
 /*------------------------------------*/
 /*-----------MEDIA QUERY 1200 PX-----------*/
 @media (min-width: 1200px) {
+  h3 {
+    font-size: 31px;
+  }
+  .slider-frame {
+    height: 70vh;
+  }
+  .slider-frame img {
+    width: 80%;
+    margin: 0px 35px 0px 120px;
+  }
+  article {
+    height: 55vh;
+    padding-inline: 1rem;
+    padding-top: 1.5rem;
+    margin-right: 130px;
+    font-size: 26px;
+  }
+  .quienes-somos {
+    font-size: 52px;
+  }
   .contenedor {
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: repeat(3, 300px);
@@ -900,6 +988,21 @@ textarea {
   }
   .wrestling {
     background-size: 350px 300px;
+  }
+  .h1 {
+    font-size: 60px;
+  }
+  .h2 {
+    font-size: 80px;
+  }
+  .textofooter {
+    font-size: 24px;
+  }
+  .duda {
+    font-size: 34px;
+  }
+  .copyright {
+    font-size: 22px;
   }
 }
 
