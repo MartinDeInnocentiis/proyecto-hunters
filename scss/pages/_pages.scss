@@ -13,7 +13,7 @@
 /*---------Estilo página INICIO-------------*/
 .main {
     background-image: url("../img/gym1.JPG");
-    height: 90vh;
+    height: 95vh;
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 5rem;
@@ -29,7 +29,7 @@
 /*-------Estilo página DISCIPLINAS---------*/
 .main3 {
     padding: 15px 0px 0px 0px;
-    background-color: rgb(61, 58, 55);
+    background: linear-gradient(180deg, #191919 0% 40%, #111111);
 }
 
 /*-------Estilo página DOJOS--------------*/
@@ -43,7 +43,6 @@
 /*-------Estilo página CONTACTO--------------*/
 .main5 {
     background-image: url("../img/gym10.JPG");
-    /*height: 100vh;*/
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 3rem;
@@ -54,7 +53,7 @@
     font-weight: 500;
     text-align: left;
     font-size: 30px;
-    font-family: "Zen Dots", serif;
+    font-family: $fuente-ppal;
     align-content: space-between;
     padding-top: 6rem;
     padding-left: 1rem;
@@ -66,7 +65,7 @@
     font-weight: 400;
     text-align: left;
     font-size: 40px;
-    font-family: "Rubik Distressed", sans-serif;
+    font-family: $fuente-sec;
     align-content: space-between;
     text-shadow: 3px 3px 2px rgb(57, 57, 57);
     padding-left: 1rem;
@@ -75,7 +74,7 @@
 h3 {
     background-color: rgba(39, 39, 39, 0.51);
     color: $color-secundario;
-    font-family: "Roboot Slab", sans-serif;
+    font-family: $fuente-ter;
     font-weight: 100;
     font-size: 22px;
     height: 5rem;
@@ -89,23 +88,23 @@ h3 {
     height: 20vh;
     margin: 2px auto 0;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(142,142,142) 0% 70%, rgba(47, 47, 44, 0.874));
-}
+    background: linear-gradient(180deg, rgba(142, 142, 142) 0% 70%, rgba(47, 47, 44, 0.874));
 
-.slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 15s infinite alternate ease-in-out;
-}
+    ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation: slide 15s infinite alternate ease-in-out;
+    }
 
-.slider-frame li {
-    list-style: none;
-    width: 100%;
-}
+    li {
+        list-style: none;
+        width: 100%;
+    }
 
-.slider-frame img {
-    width: 100%;
+    img {
+        width: 100%;
+    }
 }
 
 @keyframes slide {
@@ -150,7 +149,7 @@ h3 {
     height: 10vh;
     font-weight: 400;
     font-size: 28px;
-    font-family: "Zen Dots", serif;
+    font-family: $fuente-ppal;
     text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.431);
     margin-left: 20px;
     padding-top: 1.5rem;
@@ -158,14 +157,24 @@ h3 {
 
 article {
     color: $color-secundario;
-    font-family: "Roboot Slab", sans-serif;
+    font-family: $fuente-ter;
     font-weight: 100;
     text-align: justify;
     font-size: 16px;
     margin: 20px 20px 20px 20px;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(0, 0, 0, 0.314);
     padding-inline: 0.5rem;
     padding-top: 0.5rem;
+}
+
+div>h3{
+    color:$color-secundario;
+    text-align: justify;
+    font-family: $fuente-ter;
+    margin: 0px;
+    padding: 10px;
+    background-color:#191919cf;
+    height: 16vh;
 }
 
 /*----Estilo imágenes DISCIPLINAS-----*/
@@ -183,7 +192,7 @@ article {
 .nombres {
     color: $color-ppal;
     text-shadow: 1.5px 1.5px 1.5px rgb(116, 114, 114);
-    font-family: "Zen Dots", serif;
+    font-family: $fuente-ppal;
     font-weight: 400;
     font-size: 28px;
     padding-top: 5rem;
@@ -261,7 +270,7 @@ a {
 
 footer {
     border-top: 2px solid black;
-    background: rgb(240, 240, 231);
+    background: #EAEAEA;
     height: 12rem;
     padding-top: 2.5rem;
     text-align: center;
@@ -270,7 +279,7 @@ footer {
 .textofooter {
     font-size: 14px;
     color: #464646;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $fuente-footer;
     font-style: italic;
 }
 
@@ -279,11 +288,11 @@ footer {
     font-size: 21px;
     font-weight: bold;
     color: #5b4e4e;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $fuente-footer;
 }
 
 .copyright {
-    background-color: antiquewhite;
+    background-color: rgb(240, 240, 231);
     font-size: 11.5px;
     margin-top: 2rem;
     padding-top: 1.5px;
@@ -305,7 +314,7 @@ footer {
     font-weight: 400;
     text-align: justify;
     font-size: 22px;
-    font-family: "Zen Dots", serif;
+    font-family: $fuente-ppal;
     align-content: flex-end;
     padding-top: 0.5rem;
     padding-left: 1rem;
@@ -340,7 +349,7 @@ p {
 /*---ESTILIZACION FORMULARIO CONTACTO---*/
 /*--------------------------------------*/
 input {
-    color: rgb(78, 75, 75);
+    color: rgb(108, 104, 104);
     text-align: justify;
     font-size: 15px;
     width: 80%;
@@ -367,7 +376,7 @@ textarea {
     text-align: left;
     font-size: 24px;
     margin: 30px 10px 20px 15px;
-    font-family: "Zen Dots", serif;
+    font-family: $fuente-ppal;
     text-shadow: 2px 2px 2px rgb(238, 234, 122);
     display: flex;
     align-content: flex-start;
@@ -385,20 +394,16 @@ textarea {
         font-size: 55px;
     }
 
-    .slider-frame{
+    .slider-frame {
         height: 30vh;
     }
 
     /*----Estilo imágenes DISCIPLINAS-----*/
     /*------------------------------------*/
     .contenedor {
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: repeat(7, 270px);
         grid-row-gap: 4rem;
         justify-items: stretch;
         padding-left: 5rem;
-        margin-top: 2rem;
         margin-bottom: 2rem;
         padding-bottom: 1rem;
     }
@@ -409,50 +414,36 @@ textarea {
     }
 
     .mma {
-        grid-column: 1/1;
-        grid-row: 1/7;
         background-size: 300px 300px;
         padding-left: 6.5rem;
     }
 
     .bjj {
-        grid-column: 1/1;
-        grid-row: 2/7;
         background-size: 300px 300px;
         padding-left: 2.5rem;
     }
 
     .box {
-        grid-column: 1/1;
-        grid-row: 3/7;
         background-size: 300px 300px;
         padding-left: 4rem;
     }
 
     .kick {
-        grid-column: 1/1;
-        grid-row: 4/7;
         background-size: 300px 300px;
         padding-left: 4.5rem;
     }
 
     .thai {
-        grid-column: 1/1;
-        grid-row: 5/7;
         background-size: 300px 300px;
         padding-left: 1.5rem;
     }
 
     .judo {
-        grid-column: 1/1;
-        grid-row: 6/7;
         background-size: 300px 300px;
         padding-left: 4.5rem;
     }
 
     .wrestling {
-        grid-column: 1/1;
-        grid-row: 7/7;
         background-size: 300px 300px;
         padding-left: 1rem;
     }
@@ -466,11 +457,11 @@ textarea {
     .textofooter {
         font-size: 17px;
     }
-    
+
     .duda {
         font-size: 24px;
     }
-    
+
     .copyright {
         font-size: 16px;
     }
@@ -481,15 +472,20 @@ textarea {
     }
 
     article {
-        height: 62vh;
+        height: 58vh;
         font-size: 18px;
         padding-top: 1rem;
     }
 
-    /*------------------------------------*/
-    /*------------------------------------*/
-
+    div>h3{
+        padding: 25px 20px 20px 20px;
+        height: 17vh;
+    }
 }
+
+/*------------------------------------*/
+/*------------------------------------*/
+
 
 /*-----------MEDIA QUERY 600 PX-----------*/
 
@@ -509,18 +505,16 @@ textarea {
         padding-top: 2.5rem;
     }
 
-    .slider-frame{
+    .slider-frame {
         height: 37vh;
     }
 
     /*----Estilo imágenes DISCIPLINAS-----*/
     .contenedor {
-        display: grid;
         grid-template-columns: 300px, 300px;
         grid-template-rows: repeat(4, 270px);
         grid-gap: 0.5rem;
-        justify-items: stretch;
-        padding-left: 1.5rem;
+        padding-left: 1.3rem;
         margin-top: 2rem;
 
     }
@@ -590,15 +584,23 @@ textarea {
     }
 
     article {
-        height: 64vh;
         font-size: 21px;
         margin-top: 2rem;
+    }
+
+    div>h3{
+        padding: 35px 20px 20px 20px;
+        font-size: 26px;
     }
 
 }
 
 /*-----------MEDIA QUERY 768 PX-----------*/
 @media (min-width:768px) {
+
+    .main {
+        height: 100vh;
+    }
 
     .h1 {
         font-size: 45px;
@@ -612,18 +614,18 @@ textarea {
         font-size: 27px;
     }
 
-    .slider-frame{
+    .slider-frame {
         height: 45vh;
-    }
 
-    .slider-frame img {
-        width: 90%;
-        margin: 0px 35px 0px 38px;
+        img {
+            width: 90%;
+            margin: 0px 35px 0px 38px;
+        }
     }
 
     article {
         margin: 40px 70px 20px 40px;
-        height: 52vh;
+        height: 48vh;
         font-size: 22;
     }
 
@@ -631,6 +633,12 @@ textarea {
         font-size: 46px;
         margin-top: 9rem;
         margin-left: 40px;
+    }
+
+    div>h3{
+        padding: 25px 20px 20px 20px;
+        height: 15vh;
+        text-align: center;
     }
 
     footer {
@@ -654,7 +662,6 @@ textarea {
         padding-top: 2rem;
         padding-left: 2rem;
     }
-
 
     p {
         font-size: 20px;
@@ -701,12 +708,10 @@ textarea {
 
     /*----Estilo imágenes DISCIPLINAS-----*/
     .contenedor {
-        display: grid;
         grid-template-columns: 2, 330px;
         grid-template-rows: 4, 300px;
         grid-gap: 3rem;
-        justify-items: stretch;
-        padding-left: 4.5rem;
+        padding-left: 4rem;
         margin-top: 7rem;
 
     }
@@ -746,11 +751,11 @@ textarea {
     .textofooter {
         font-size: 22px;
     }
-    
+
     .duda {
         font-size: 32px;
     }
-    
+
     .copyright {
         font-size: 20px;
     }
@@ -779,30 +784,35 @@ textarea {
         font-size: 70px;
     }
 
-    .slider-frame{
+    .slider-frame {
         height: 60vh;
-    }
 
-    .slider-frame img {
-        width: 80%;
-        margin: 0px 35px 0px 100px;
+        img {
+            width: 80%;
+            margin: 0px 35px 0px 100px;
+        }
     }
 
     article {
-        height: 40vh;
+        height: 35vh;
     }
 
     .quienes-somos {
         font-size: 52px;
     }
 
+    div>h3{
+        padding: 52px 220px 20px 220px;
+        height: 22vh;
+        font-size: 28px;
+    }
+
+
     /*----Estilo imágenes DISCIPLINAS-----*/
     .contenedor {
-        display: grid;
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: repeat(3, 300px);
         grid-gap: 1.5rem;
-        justify-items: stretch;
         padding-left: 1.5rem;
         margin-top: 6rem;
 
@@ -877,13 +887,17 @@ textarea {
         font-size: 31px;
     }
 
-    .slider-frame{
+    .slider-frame {
         height: 70vh;
+
+        img {
+            width: 80%;
+            margin: 0px 35px 0px 120px;
+        }
     }
 
-    .slider-frame img {
-        width: 80%;
-        margin: 0px 35px 0px 120px;
+    .main2{
+        height: 120vh;
     }
 
     article {
@@ -896,6 +910,10 @@ textarea {
 
     .quienes-somos {
         font-size: 52px;
+    }
+    
+    div>h3{
+        margin: 0px;
     }
 
     .contenedor {
@@ -948,11 +966,11 @@ textarea {
     .textofooter {
         font-size: 24px;
     }
-    
+
     .duda {
         font-size: 34px;
     }
-    
+
     .copyright {
         font-size: 22px;
     }
