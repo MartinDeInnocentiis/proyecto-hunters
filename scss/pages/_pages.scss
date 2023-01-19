@@ -3,11 +3,7 @@
 .main3,
 .main4,
 .main5 {
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
+    @include mains();
 }
 
 /*---------Estilo página INICIO-------------*/
@@ -22,7 +18,7 @@
 /*---------Estilo página QUIENES SOMOS------*/
 .main2 {
     background-image: url("../img/gym2.jpg");
-    height: 100vh;
+    height: 114vh;
     flex-direction: column;
 }
 
@@ -76,11 +72,11 @@ h3 {
     color: $color-secundario;
     font-family: $fuente-ter;
     font-weight: 100;
-    font-size: 22px;
-    height: 5rem;
+    font-size: 20px;
+    height: 6rem;
     margin-top: 3px;
     text-align: center;
-    padding-top: 1.5rem;
+    padding-top: 2.2rem;
 }
 
 .slider-frame {
@@ -157,24 +153,25 @@ h3 {
 
 article {
     color: $color-secundario;
+    background-color: rgba(0, 0, 0, 0.314);
     font-family: $fuente-ter;
     font-weight: 100;
     text-align: justify;
     font-size: 16px;
     margin: 20px 20px 20px 20px;
-    background-color: rgba(0, 0, 0, 0.314);
     padding-inline: 0.5rem;
     padding-top: 0.5rem;
 }
 
-div>h3{
-    color:$color-secundario;
+div>h3 {
+    color: $color-secundario;
     text-align: justify;
     font-family: $fuente-ter;
     margin: 0px;
     padding: 10px;
-    background-color:#191919cf;
     height: 16vh;
+    background-color: #191919cf;
+    backdrop-filter: invert(180%);
 }
 
 /*----Estilo imágenes DISCIPLINAS-----*/
@@ -274,31 +271,31 @@ footer {
     height: 12rem;
     padding-top: 2.5rem;
     text-align: center;
-}
 
-.textofooter {
-    font-size: 14px;
-    color: #464646;
-    font-family: $fuente-footer;
-    font-style: italic;
-}
+    .textofooter {
+        font-size: 14px;
+        color: #464646;
+        font-family: $fuente-footer;
+        font-style: italic;
+    }
 
-.duda {
-    margin-top: 1.5rem;
-    font-size: 21px;
-    font-weight: bold;
-    color: #5b4e4e;
-    font-family: $fuente-footer;
-}
+    .duda {
+        margin-top: 1.5rem;
+        font-size: 21px;
+        font-weight: bold;
+        color: #5b4e4e;
+        font-family: $fuente-footer;
+    }
 
-.copyright {
-    background-color: rgb(240, 240, 231);
-    font-size: 11.5px;
-    margin-top: 2rem;
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
-    text-align: left;
-    border-top: 1px solid black 50%;
+    .copyright {
+        background-color: rgb(240, 240, 231);
+        font-size: 11.5px;
+        margin-top: 2rem;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+        text-align: left;
+        border-top: 1px solid black 50%;
+    }
 }
 
 .a {
@@ -308,34 +305,39 @@ footer {
 
 /*----------------------------------------*/
 /*---------ESTILIZACION DOJOS-------------*/
-.titulos {
-    color: $color-secundario;
-    list-style: none;
-    font-weight: 400;
-    text-align: justify;
-    font-size: 22px;
-    font-family: $fuente-ppal;
-    align-content: flex-end;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    text-shadow: 3px 3px 2px rgb(94, 92, 92);
-}
-
-p {
-    color: $color-ppal;
-    text-align: left;
-    font-size: 16px;
-    margin: 10px 10px 0px 0px;
-    font-family: "Sintony", sans-serif;
-    text-shadow: 3px 3px 2px rgb(57, 57, 57);
-    padding-left: 1rem;
-    border-bottom: 1px solid white;
-}
-
 .direccion {
-    background-color: rgba(0, 0, 0, 0.254);
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(21px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.36);
+    border-radius: 24px;
+    border:1px solid rgba(255,255,255,0.16);
     padding-bottom: 0.5rem;
     padding-inline: 0.5rem;
+
+    h2 {
+        color: $color-secundario;
+        list-style: none;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 22px;
+        font-family: $fuente-ppal;
+        align-content: flex-end;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        text-shadow: 3px 3px 2px rgb(94, 92, 92);
+    }
+
+    p {
+        color: $color-ppal;
+        text-align: left;
+        font-size: 16px;
+        margin: 10px 10px 0px 0px;
+        font-family: $fuente-ter;
+        text-shadow: 1.5px 1.5px 2px rgb(57, 57, 57);
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.16);
+    }
 }
 
 .mapa iframe {
@@ -371,7 +373,7 @@ textarea {
 }
 
 .msj {
-    color: #fffffff7;
+    color: $color-secundario;
     font-weight: 400;
     text-align: left;
     font-size: 24px;
@@ -385,6 +387,10 @@ textarea {
 /*-----------MEDIA QUERY 480 PX-----------*/
 
 @media (min-width:480px) {
+
+    .main2{
+        height: 100vh;
+    }
 
     .h1 {
         font-size: 35px;
@@ -402,7 +408,6 @@ textarea {
     /*------------------------------------*/
     .contenedor {
         grid-row-gap: 4rem;
-        justify-items: stretch;
         padding-left: 5rem;
         margin-bottom: 2rem;
         padding-bottom: 1rem;
@@ -452,18 +457,18 @@ textarea {
 
     footer {
         height: 11rem;
-    }
 
-    .textofooter {
-        font-size: 17px;
-    }
+        .textofooter {
+            font-size: 17px;
+        }
 
-    .duda {
-        font-size: 24px;
-    }
+        .duda {
+            font-size: 24px;
+        }
 
-    .copyright {
-        font-size: 16px;
+        .copyright {
+            font-size: 16px;
+        }
     }
 
     .quienes-somos {
@@ -477,7 +482,7 @@ textarea {
         padding-top: 1rem;
     }
 
-    div>h3{
+    div>h3 {
         padding: 25px 20px 20px 20px;
         height: 17vh;
     }
@@ -588,7 +593,7 @@ textarea {
         margin-top: 2rem;
     }
 
-    div>h3{
+    div>h3 {
         padding: 35px 20px 20px 20px;
         font-size: 26px;
     }
@@ -635,36 +640,38 @@ textarea {
         margin-left: 40px;
     }
 
-    div>h3{
+    div>h3 {
         padding: 25px 20px 20px 20px;
         height: 15vh;
         text-align: center;
     }
 
     footer {
-        height: 14rem;
+        height: 10rem;
+
+        .textofooter {
+            font-size: 16px;
+        }
+
+        .duda {
+            font-size: 26px;
+        }
+
+        .copyright {
+            font-size: 15px;
+        }
     }
 
-    .textofooter {
-        font-size: 16px;
-    }
+    .direccion {
+        h2 {
+            font-size: 40px;
+            padding-top: 2rem;
+            padding-left: 1rem;
+        }
 
-    .duda {
-        font-size: 26px;
-    }
-
-    .copyright {
-        font-size: 14px;
-    }
-
-    .titulos {
-        font-size: 40px;
-        padding-top: 2rem;
-        padding-left: 2rem;
-    }
-
-    p {
-        font-size: 20px;
+        p {
+            font-size: 20px;
+        }
     }
 
     input {
@@ -690,14 +697,8 @@ textarea {
     }
 
     .msj {
-        color: #fffffff7;
-        font-weight: 400;
-        text-align: left;
         font-size: 34.5px;
         margin: 30px 20px 20px 30px;
-        font-family: "Zen Dots", serif;
-        text-shadow: 2px 2px 2px rgb(238, 234, 122);
-        display: flex;
         align-content: flex-end;
         padding-top: 6.5rem;
     }
@@ -801,7 +802,7 @@ textarea {
         font-size: 52px;
     }
 
-    div>h3{
+    div>h3 {
         padding: 52px 220px 20px 220px;
         height: 22vh;
         font-size: 28px;
@@ -872,7 +873,13 @@ textarea {
     }
 
     footer {
-        height: 10rem;
+        .textofooter {
+            font-size: 18px;
+        }
+
+        .copyright {
+            font-size: 17px;
+        }
     }
 }
 
@@ -896,7 +903,7 @@ textarea {
         }
     }
 
-    .main2{
+    .main2 {
         height: 120vh;
     }
 
@@ -911,8 +918,8 @@ textarea {
     .quienes-somos {
         font-size: 52px;
     }
-    
-    div>h3{
+
+    div>h3 {
         margin: 0px;
     }
 
@@ -963,15 +970,19 @@ textarea {
         font-size: 80px;
     }
 
-    .textofooter {
-        font-size: 24px;
-    }
+    footer {
+        height: 22vh;
 
-    .duda {
-        font-size: 34px;
-    }
+        .textofooter {
+            font-size: 24px;
+        }
 
-    .copyright {
-        font-size: 22px;
+        .duda {
+            font-size: 34px;
+        }
+
+        .copyright {
+            font-size: 22px;
+        }
     }
 }

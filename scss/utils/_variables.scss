@@ -5,3 +5,11 @@ $fuente-ppal: "Zen Dots", serif;
 $fuente-sec: "Rubik Distressed", sans-serif;
 $fuente-ter: "Roboot Slab", sans-serif;
 $fuente-footer:Verdana, Geneva, Tahoma, sans-serif;
+
+@mixin mains {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
