@@ -217,7 +217,8 @@ ol {
 
 /*-------Estilo página CONTACTO--------------*/
 .main5 {
-  background-image: url("../img/gym10.JPG");
+  background-image: url("../img/gym10.jpg");
+  z-index: 1;
   flex-direction: column;
   justify-content: flex-start;
   padding-bottom: 3rem;
