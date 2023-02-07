@@ -12,7 +12,7 @@
     height: 95vh;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 5rem;
+    padding-bottom: 6.5rem;
 }
 
 /*---------Estilo página QUIENES SOMOS------*/
@@ -32,7 +32,7 @@
 .main4 {
     background-image: url("../img/gym3.jpg");
     flex-direction: row;
-    padding: 2rem; 
+    padding: 2rem;
     justify-content: space-between;
 }
 
@@ -182,8 +182,7 @@ div>h3 {
     grid-template-columns: 300px;
     grid-template-rows: repeat(7, 300px);
     justify-items: stretch;
-    padding-left: 2rem;
-    margin-top: 2rem;
+    margin: auto;
 }
 
 
@@ -194,6 +193,12 @@ div>h3 {
     font-weight: 400;
     font-size: 28px;
     padding-top: 5rem;
+
+    &:hover {
+        transform: scale(1.1);
+        color: $color-secundario;
+        text-shadow: 1px 2px 6px rgb(0, 0, 0);
+    }
 }
 
 .mma {
@@ -266,6 +271,7 @@ a {
     color: #fff200;
 }
 
+
 footer {
     border-top: 2px solid black;
     background: #EAEAEA;
@@ -309,9 +315,9 @@ footer {
 .direccion {
     backdrop-filter: blur(21px);
     -webkit-backdrop-filter: blur(21px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.36);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
     border-radius: 24px;
-    border:1px solid rgba(255,255,255,0.16);
+    border: 1px solid rgba(255, 255, 255, 0.16);
     padding-bottom: 0.5rem;
     padding-inline: 0.5rem;
 
@@ -337,7 +343,7 @@ footer {
         text-shadow: 1.5px 1.5px 2px rgb(57, 57, 57);
         padding-left: 1rem;
         padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255,255,255,0.16);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
     }
 }
 
@@ -362,7 +368,7 @@ input {
 }
 
 textarea {
-    color: rgb(0, 0, 0);
+    color: rgb(108, 104, 104);
     text-align: justify;
     font-size: 15px;
     margin: 15px 10px 10px 15px;
@@ -389,7 +395,7 @@ textarea {
 
 @media (min-width:480px) {
 
-    .main2{
+    .main2 {
         height: 100vh;
     }
 
@@ -409,7 +415,6 @@ textarea {
     /*------------------------------------*/
     .contenedor {
         grid-row-gap: 4rem;
-        padding-left: 5rem;
         margin-bottom: 2rem;
         padding-bottom: 1rem;
     }
@@ -520,7 +525,6 @@ textarea {
         grid-template-columns: 300px, 300px;
         grid-template-rows: repeat(4, 270px);
         grid-gap: 0.5rem;
-        padding-left: 1.3rem;
         margin-top: 2rem;
 
     }
@@ -713,7 +717,6 @@ textarea {
         grid-template-columns: 2, 330px;
         grid-template-rows: 4, 300px;
         grid-gap: 3rem;
-        padding-left: 4rem;
         margin-top: 7rem;
 
     }
@@ -815,7 +818,6 @@ textarea {
         grid-template-columns: repeat(3, 300px);
         grid-template-rows: repeat(3, 300px);
         grid-gap: 1.5rem;
-        padding-left: 1.5rem;
         margin-top: 6rem;
 
     }
@@ -927,7 +929,6 @@ textarea {
     .contenedor {
         grid-template-columns: repeat(3, 350px);
         grid-template-rows: repeat(3, 300px);
-        padding-left: 2.5rem;
     }
 
     .nombres {
